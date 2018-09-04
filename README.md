@@ -86,5 +86,6 @@ The parameters were chosen manually by trial and error method. First, make sure 
 ### The vehicle must successfully drive a lap around the track.
 
 A short video with the final parameters is [./vedio/final-config.mov](./final-config.mov).
+Tested to run the complete lap.
 
 
