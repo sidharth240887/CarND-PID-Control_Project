@@ -9,6 +9,15 @@ public:
   double p_error;
   double i_error;
   double d_error;
+  double prev_cte;
+
+  /**
+   * Error counter
+  **/
+  long counter;
+  double errorSum;
+  double minError;
+  double maxError;
 
   /*
   * Coefficients
@@ -41,6 +50,21 @@ public:
   * Calculate the total PID error.
   */
   double TotalError();
+
+  /*
+  *  Get the average error.
+  */
+  double AverageError();
+
+  /*
+  * Get the minimum error.
+  */
+  double MinimumError();
+
+  /*
+  * Get the maximum error.
+  */
+  double MaximumError();
 };
 
 #endif /* PID_H */
