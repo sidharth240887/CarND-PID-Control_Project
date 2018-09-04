@@ -51,7 +51,7 @@ Using the right arrow, you need to go to the Project 4: PID Controller project:
 
 ![Simulator PID controller project](images/Simulator_pidcontrol.PNG)
 
-Click the "Select" button, and the car starts driving. You will see the debugging information on the PID controller terminal. A short video with the final config is [./videos/final-parameters.mov](./videos/final-parameters.mov).
+Click the "Select" button, and the car starts driving. You will see the debugging information on the PID controller terminal. A short video with the final config is [./videos/final-config.mov](./videos/final-config.mov).
 
 # [Rubric](https://review.udacity.com/#!/rubrics/824/view) points
 
@@ -85,6 +85,6 @@ The parameters were chosen manually by trial and error method. First, make sure 
 
 ### The vehicle must successfully drive a lap around the track.
 
-A short video with the final parameters is [./final-config.mov](./final-config.mov).
+A short video with the final parameters is [./vedio/final-config.mov](./final-config.mov).
 
 
