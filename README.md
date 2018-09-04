@@ -49,9 +49,9 @@ Now the PID controller is running and listening on port 4567 for messages from t
 
 Using the right arrow, you need to go to the Project 4: PID Controller project:
 
-![Simulator PID controller project](images/simulator_PID_Controller.png)
+![Simulator PID controller project](images/Simulator_pidcontrol.PNG)
 
-Click the "Select" button, and the car starts driving. You will see the debugging information on the PID controller terminal. A short video with the final parameters is [./videos/final-parameters.mov](./videos/final-parameters.mov).
+Click the "Select" button, and the car starts driving. You will see the debugging information on the PID controller terminal. A short video with the final config is [./videos/final-parameters.mov](./videos/final-parameters.mov).
 
 # [Rubric](https://review.udacity.com/#!/rubrics/824/view) points
 
@@ -71,20 +71,20 @@ The PID implementation is done on the [./src/PID.cpp](./src/PID.cpp). The [PID::
 
 ### Describe the effect each of the P, I, D components had in your implementation.
 
-- The proportional portion of the controller tries to steer the car toward the center line (against the cross-track error). If used along, the car overshoots the central line very easily and go out of the road very quickly. An example video where this component is used along is [./videos/only-proportional.mov](./videos/only-proportional.mov).
+- The proportional portion of the controller tries to steer the car toward the center line (against the cross-track error). If used along, the car overshoots the central line very easily and go out of the road very quickly. 
 
-- The integral portion tries to eliminate a possible bias on the controlled system that could prevent the error to be eliminated. If used along, it makes the car to go in circles. In the case of the simulator, no bias is present. An example video where this component is used along is [./videos/only-integral.mov](./videos/only-integral.mov).
+- The integral portion tries to eliminate a possible bias on the controlled system that could prevent the error to be eliminated. If used along, it makes the car to go in circles. In the case of the simulator, no bias is present. 
 
-- The differential portion helps to counteract the proportional trend to overshoot the center line by smoothing the approach to it. An example video where this component is used along is [./videos/only-differential.mov](./videos/only-differential.mov).
+- The differential portion helps to counteract the proportional trend to overshoot the center line by smoothing the approach to it. 
 
 ### Describe how the final hyperparameters were chosen.
 
-The parameters were chosen manually by try and error. First, make sure the car can drive straight with zero as parameters. Then add the proportional and the car start going on following the road but it starts overshooting go out of it. Then add the differential to try to overcome the overshooting. The integral part only moved the car out of the road; so, it stayed as zero. After the car drove the track without going out of it, the parameters increased to minimize the average cross-track error on a single track lap. The final parameters where [P: 1.5, I: 0.0, D: 2.5].
+The parameters were chosen manually by try and error method. First, make sure the car can drive straight with zero as parameters. Then add the proportional and the car start going on following the track but it starts to overshoot and go out of the track. Then add the differential to try to overcome the overshooting on the track. The integral part only moved the car out of the road; so, it stayed as zero. After the car drove the track without going out of it, the parameters increased to minimize the average cross-track error on a single track lap. The final parameters where [P: 1.5, I: 0.0, D: 2.5].
 
 ## Simulation
 
 ### The vehicle must successfully drive a lap around the track.
 
-A short video with the final parameters is [./videos/final-parameters.mov](./videos/final-parameters.mov).
+A short video with the final parameters is [./final-config.mov](./final-config.mov).
 
 
