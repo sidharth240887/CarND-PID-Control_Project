@@ -79,7 +79,7 @@ The PID implementation is done on the [./src/PID.cpp](./src/PID.cpp). The [PID::
 
 ### Describe how the final hyperparameters were chosen.
 
-The parameters were chosen manually by try and error method. First, make sure the car can drive straight with zero as parameters. Then add the proportional and the car start going on following the track but it starts to overshoot and go out of the track. Then add the differential to try to overcome the overshooting on the track. The integral part only moved the car out of the road; so, it stayed as zero. After the car drove the track without going out of it, the parameters increased to minimize the average cross-track error on a single track lap. The final parameters where [P: 1.5, I: 0.0, D: 2.5].
+The parameters were chosen manually by trial and error method. First, make sure the car can drive straight with zero as parameters. Then add the proportional and the car start going on following the track but it starts to overshoot and go out of the track. Then add the differential to try to overcome the overshooting on the track. The integral part only moved the car out of the road; so, it stayed as zero. After the car drove the track without going out of it, the parameters increased to minimize the average cross-track error on a single track lap. The final parameters where [P: 1.5, I: 0.0, D: 2.5].
 
 ## Simulation
 
